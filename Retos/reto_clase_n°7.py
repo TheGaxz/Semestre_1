@@ -1,20 +1,17 @@
-#Escribir una funcion que reciba una frase por teclado y devuelva un diccionario con las palabras que contiene y su longitud.
+#Escribir una funcion que reciba una frase por teclado y devuelva un diccionario con las palabras 
+#que contiene y su longitud.
 
-texto = input("Ingrese el texto: ")
+def funcion() :
+    texto= str(input("Ingrese el texto: "))
+    division = texto.split()
+    diccionario= {}
 
+    for i in division:
+        diccionario[i] = len(i)
 
-eliminar = ",;.:!\n"
+    print(diccionario)
+funcion()
 
-for caracter in eliminar:
-    texto = texto.replace(caracter, "")
-
-texto = texto.lower()
-var_1 = len(texto)
-var_2 = texto.split()
-
-diccionario = {
-    var_1 : var_2,
-}
+ 
 
 
-print(diccionario)
