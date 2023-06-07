@@ -9,7 +9,7 @@ Nota: el -1 no se cuenta. Si el usuario ingresa un numero negativo debe volver a
 numero y no se usa en el calculo.'''
 
 print("Ingrese los numeros que desee (Solo positivos)")
-print("Para cerrar el ciclo ingrese -1)")
+print("Para cerrar el ciclo ingrese -1")
 x = 0
 datos = []
 
@@ -22,24 +22,37 @@ print(datos)
 datos.remove(-1)
 
 #Suma de pares
-
 #Suma de impares
+par = 0
+impar = 0
+
+for i in datos:
+        if i % 2 == 0:
+                par = par + i
+        else:
+                impar = impar + i
+print("La suma de los numeros pares es:", par)
+print("La suma de los numeros impares es:", impar)
 
 #Suma total
 sum_total = sum(datos)
-print("La suma total es: ", sum_total)
+print("La suma total es:", sum_total)
 
 #Promedio
 promedio = round(sum(datos)/len(datos),2)
-print("El promedio es: ", promedio)
+print("El promedio es:", promedio)
 
 #N° mayor ingresado
 mayor= max(datos)
 print("El numero mayor es:", mayor)
 
 #si el numero mayor obtenido es mayor, menor o igual que el promedio calculado.
-
-
+if mayor > promedio:
+        print("EL numero mayor es", mayor, "y es mayor al promedio")
+elif mayor == promedio:
+        print("El numero mayor es", mayor, "y es igual al promedio")
+else:
+        print("EL numero mayor es", mayor, "y es menor al promedio")
 
 
 
