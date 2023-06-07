@@ -6,23 +6,38 @@ pares, la sumatoria de los numeros impares y el promedio total. Ademas, se debe 
 si el numero mayor obtenido es mayor, menor o igual que el promedio calculado. 
 Asegurate de resolver este problema utilizando las funciones que consideres adecuadas.
 Nota: el -1 no se cuenta. Si el usuario ingresa un numero negativo debe volver a pedir un 
-numero y no se usa en el calculo. 
+numero y no se usa en el calculo.'''
 
-El numero es mayor que el promedio y este es 9'''
+print("Ingrese los numeros que desee (Solo positivos)")
+print("Para cerrar el ciclo ingrese -1)")
+x = 0
+datos = []
 
-x = int(input("Ingrese los numeros: "))
+while x!= -1:
+        x = int(input(">"))
+        datos.append(x)
 
-while x == -1:
-    x = int(input("Ingrese los numeros: "))
+print(datos)
 
-
+datos.remove(-1)
 
 #Suma de pares
-#Suma de impares
-#Suma total
-#Promedio
-#N° mayor ingresado
 
+#Suma de impares
+
+#Suma total
+sum_total = sum(datos)
+print("La suma total es: ", sum_total)
+
+#Promedio
+promedio = round(sum(datos)/len(datos),2)
+print("El promedio es: ", promedio)
+
+#N° mayor ingresado
+mayor= max(datos)
+print("El numero mayor es:", mayor)
+
+#si el numero mayor obtenido es mayor, menor o igual que el promedio calculado.
 
 
 
