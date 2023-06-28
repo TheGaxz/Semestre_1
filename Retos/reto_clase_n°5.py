@@ -5,11 +5,8 @@
 n1=int(input("Ingrese un numero: "))
 
 def par(n1):
-    if True:
-        print("El numero es par")
-    else:
-        print("El numero es impar")
+    if n1/2:
+        print("Es par")
 
-print("kdsdf")
 
 
